@@ -8,14 +8,14 @@
   font-family: sans-serif;
 }
 
-.title-container{
+.title-container {
   font-size: 2em;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.user__wrapper{
-  margin:20px;
+.user__wrapper {
+  margin: 20px;
 }
 
 .user {
@@ -69,6 +69,7 @@
 }
 
 .btn {
+  display: inline-block;
   padding: 0.5em;
   cursor: pointer;
   border: none;
@@ -76,14 +77,16 @@
   color: white;
   text-transform: capitalize;
   font-size: 0.6em;
-
 }
 
 .btn--follow {
+  max-width: 100px;
+  width: 52px;
   background-color: rgb(81 170 75);
 }
 
 .btn--send {
+  width: 102px;
   background-color: var(--main-bg-color)
 }
 
@@ -118,4 +121,10 @@
 
 .icon-twitter {
   background-image: url(./../icons/twitter.png);
+}
+
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
